@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Net;
-using MySql.Data.MySqlClient;
 using System.IO;
 
 namespace ConsoleApp1
 {
     static class Program
     {
-        public static IEnumerable<(T i, int _i)> WithIndex<T>(this IEnumerable<T> s) => s?.Select((i, _i) => (i, _i)) ?? new List<(T, int)>();
         static void Main(string[] args)
         {
             List<string> l = new List<string>();
